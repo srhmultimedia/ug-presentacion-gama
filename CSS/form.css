@@ -1,0 +1,74 @@
+body {
+    background-color: var(--blue-one);
+    color: white;
+}
+.welcome-msg {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+    text-align: center;
+}
+.content {
+    width: 50%;
+    display: flex;
+    padding: 2rem;
+}
+
+.asesor-img {
+    transform: rotateY(180deg);
+    max-height: 80vh;
+    animation: filter 2s infinite;
+
+}
+
+@keyframes filter {
+    0% {
+        filter: brightness(100%);
+    }
+    50% {
+        filter: brightness(90%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+
+.content-left {
+    justify-content: end;
+    align-items: center;
+    
+}
+
+.content-right {
+    align-items: center;
+}
+
+.register fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 1.5rem;
+}
+
+fieldset input {
+    margin: 1rem 0;
+    width: 100%;
+    color: white;
+    background-color: var(--blue-one);
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25rem;
+    border-bottom: 2px solid white;
+}
+
+fieldset input:focus {
+    outline: none;
+}
+
+button {
+    background-color: var(--yellow);
+    color: var(--blue-one);
+    font-size: 1.5rem;
+    font-weight: 600;
+}

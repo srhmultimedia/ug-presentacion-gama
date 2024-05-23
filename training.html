@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Capacitación</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/base.css" />
+    <link rel="stylesheet" href="./CSS/training.css" />
+  </head>
+  <body>
+    <div class="user">
+      <img src="https://api.iconify.design/openmoji:woman.svg" alt="User" />
+      <p class="name" id="name"></p>
+      <p class="job" id="job"></p>
+    </div>
+    <div class="container">
+      <div class="content content-left">
+        <h1 class="title-training">¿Sobre qué quieres aprender hoy?</h1>
+        <div class="topic">
+          <img
+            src="https://api.iconify.design/streamline-emojis:man-mechanic-2.svg"
+            alt="Engineer"
+          />
+          <p id="topic-one">
+            PROGRAMA DE FORMACIÓN DE AUDITORES INTERNOS EN EL SISTEMA DE GESTIÓN
+            DE LA ENERGÍA. NTC ISO 50001:2019
+          </p>
+        </div>
+        <div class="topic">
+          <img
+            src="https://api.iconify.design/streamline-emojis:woman-technologist-2.svg"
+            alt="Admin"
+          />
+          <p id="topic-two">
+            CURSO GESTIÓN DE LOS CAMBIOS PARA LA TOMA DE DECISIONES EN LA
+            ORGANIZACIÓN
+          </p>
+        </div>
+      </div>
+      <div class="content content-right">
+        <h2 class="title-topic" id="training-title"></h2>
+        <p class="desc-topic" id="training-description"></p>
+        <form class="survey-form" id="survey-form">
+          <p class="question" id="question">Encuesta:</p>
+          <input type="radio" id="option1" name="answer" value="0" />
+          <label for="option1">Option 1</label><br />
+          <input type="radio" id="option2" name="answer" value="1" />
+          <label for="option2">Option 2</label><br />
+          <input type="radio" id="option3" name="answer" value="2" />
+          <label for="option3">Option 3</label><br />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div id="feedback-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 class="feedback-title">¡Gracias por responder!</h3>
+        <p class="feedback-msg"></p>
+      </div>
+    </div>
+    <script src="./JS/training.js"></script>
+  </body>
+</html>
