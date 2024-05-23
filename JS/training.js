@@ -109,5 +109,5 @@ topics.forEach(function (topic) {
 var closeButton = document.querySelector("#feedback-modal .close");
 closeButton.addEventListener("click", function() {
   feedbackModal.style.display = "none";
-  location.reload();
+  window.location.href = "https://docs.google.com/presentation/d/1yBCqZJb6T1DAtfwrw7YgL6RUYL_jH1-72BXX0MQ1kSg/preview?slide=id.g20da5686f28_0_42"
 });
